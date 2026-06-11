@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divya Kumari — Full Stack Developer & AI Enthusiast</title>
+  <meta name="description" content="Full Stack Developer & Deep Learning Enthusiast. Building thoughtful web applications and AI-powered solutions. Available for freelance projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient background particles -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">DK<span class="accent">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#freelance" class="nav-link">Freelance</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Hire Me</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="line-1">Divya</span>
+        <span class="line-2">Kumari<span class="accent">.</span></span>
+      </h1>
+      <p class="hero-title">
+        <span class="typed-text" id="typed-text"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-bio">
+        I build applications that are as thoughtful as they are functional — combining clean engineering with a genuine curiosity for machine intelligence. VIT Chennai · ECE + CS.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+        <a href="#projects" class="btn btn-ghost">See My Work</a>
+        <a href="https://drive.google.com/file/d/1VH5YtLfCyxjn1eNtjM2DDw852pAHZebR/view?usp=sharing" target="_blank" class="btn btn-outline">Résumé ↗</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/divya-kumari-575b73274/" target="_blank" class="social-link" aria-label="LinkedIn">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/Divya-Laddu" target="_blank" class="social-link" aria-label="GitHub">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="https://www.instagram.com/laddu_9693/" target="_blank" class="social-link" aria-label="Instagram">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-card-glow"></div>
+        <img src="lock.jpg" alt="Divya Kumari" class="hero-avatar" onerror="this.src='https://ui-avatars.com/api/?name=Divya+Kumari&size=300&background=7C3AED&color=fff&bold=true'" />
+        <div class="hero-card-info">
+          <div class="card-stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="card-stat">
+            <span class="stat-number">₹2L</span>
+            <span class="stat-label">Startup Funded</span>
+          </div>
+          <div class="card-stat">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Hackathons</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Building at the intersection of <em>engineering</em> and <em>intelligence</em></h2>
+          <p>I'm Divya Kumari, a Full Stack Developer studying Electronics & Computer Engineering at VIT Chennai. I love blending logic with creativity to build applications that are functional, beautiful, and genuinely solve problems.</p>
+          <p>My journey spans full-stack web development, deep learning, and now — a funded IoT startup. Whether it's a MERN app or a facial recognition attendance system, I bring the same curiosity to every challenge.</p>
+          <p>Beyond code: I'm in the marketing teams of Cloud Ops Club, Placement XP, and BandVIT — because great products also need great stories.</p>
+          <div class="about-tags">
+            <span class="tag">🎓 VIT Chennai</span>
+            <span class="tag">🤖 Deep Learning</span>
+            <span class="tag">💡 IoT Startup</span>
+            <span class="tag">🎸 BandVIT</span>
+          </div>
+        </div>
+        <div class="about-extras">
+          <div class="extra-card">
+            <div class="extra-icon">☁️</div>
+            <div>
+              <strong>Cloud Ops Club</strong>
+              <p>Marketing Department</p>
+            </div>
+          </div>
+          <div class="extra-card">
+            <div class="extra-icon">🎯</div>
+            <div>
+              <strong>Placement XP</strong>
+              <p>Management Department</p>
+            </div>
+          </div>
+          <div class="extra-card">
+            <div class="extra-icon">🎸</div>
+            <div>
+              <strong>BandVIT</strong>
+              <p>Marketing Department</p>
+            </div>
+          </div>
+          <div class="extra-card highlight-card">
+            <div class="extra-icon">🚀</div>
+            <div>
+              <strong>SSV 2026 — V-NEST</strong>
+              <p>₹2 Lakhs funded IoT project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label">02 — Skills</div>
+      <h2 class="section-title">My Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">🎨</span> Frontend
+          </h3>
+          <div class="skill-pills">
+            <span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">JavaScript</span><span class="pill">React</span><span class="pill">Angular</span><span class="pill">Bootstrap</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">⚙️</span> Backend
+          </h3>
+          <div class="skill-pills">
+            <span class="pill">Node.js</span><span class="pill">Express.js</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">🗄️</span> Database & Cloud
+          </h3>
+          <div class="skill-pills">
+            <span class="pill">MongoDB</span><span class="pill">MySQL</span><span class="pill">Microsoft Azure</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">🤖</span> AI / ML
+          </h3>
+          <div class="skill-pills">
+            <span class="pill">TensorFlow</span><span class="pill">Scikit-learn</span><span class="pill">OpenCV</span><span class="pill">FaceNet</span><span class="pill">SVM</span><span class="pill">Deep Learning</span><span class="pill">BLIP</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">💻</span> Languages
+          </h3>
+          <div class="skill-pills">
+            <span class="pill">Python</span><span class="pill">Java</span><span class="pill">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">🛠️</span> Tools
+          </h3>
+          <div class="skill-pills">
+            <span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">VS Code</span><span class="pill">Jupyter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-title">Things I've Built</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-header">
+            <div class="project-type">AI / Deep Learning</div>
+            <a href="https://github.com/Divya-Laddu/Automated_Attendance" target="_blank" class="project-link-icon" aria-label="GitHub">↗</a>
+          </div>
+          <h3 class="project-title">Automated Attendance Monitoring System</h3>
+          <p class="project-desc">Contactless, intelligent attendance system using FaceNet for facial feature extraction and SVM for real-time recognition. Eliminates proxy attendance with ML precision.</p>
+          <div class="project-tags">
+            <span class="ptag">Python</span><span class="ptag">FaceNet</span><span class="ptag">SVM</span><span class="ptag">OpenCV</span><span class="ptag">Deep Learning</span>
+          </div>
+          <a href="https://github.com/Divya-Laddu/Automated_Attendance" target="_blank" class="project-cta">View on GitHub ↗</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-type">AI / Vision</div>
+            <a href="https://github.com/Divya-Laddu/ai-image-captioning-blip" target="_blank" class="project-link-icon" aria-label="GitHub">↗</a>
+          </div>
+          <h3 class="project-title">AI-Powered Image Captioning</h3>
+          <p class="project-desc">Generates accurate, context-aware textual descriptions from images using BLIP (Bootstrapping Language-Image Pretraining). Improves accessibility and image understanding.</p>
+          <div class="project-tags">
+            <span class="ptag">Python</span><span class="ptag">BLIP</span><span class="ptag">NLP</span><span class="ptag">CV</span>
+          </div>
+          <a href="https://github.com/Divya-Laddu/ai-image-captioning-blip" target="_blank" class="project-cta">View on GitHub ↗</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-type">Full Stack · MEAN</div>
+            <a href="https://github.com/Divya-Laddu/Ecomify" target="_blank" class="project-link-icon" aria-label="GitHub">↗</a>
+          </div>
+          <h3 class="project-title">Ecomify — E-Commerce App</h3>
+          <p class="project-desc">Responsive e-commerce platform for browsing products, managing a cart, and placing orders. Powered by Angular, Node.js, Express, and MongoDB with Bootstrap UI.</p>
+          <div class="project-tags">
+            <span class="ptag">Angular</span><span class="ptag">Node.js</span><span class="ptag">MongoDB</span><span class="ptag">Bootstrap</span>
+          </div>
+          <a href="https://github.com/Divya-Laddu/Ecomify" target="_blank" class="project-cta">View on GitHub ↗</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-type">Full Stack · MERN</div>
+            <a href="https://github.com/Divya-Laddu/MERN-CRUD-APP" target="_blank" class="project-link-icon" aria-label="GitHub">↗</a>
+          </div>
+          <h3 class="project-title">MERN CRUD Application</h3>
+          <p class="project-desc">Full-stack MERN app with RESTful backend and React frontend. Complete create, read, update, delete — a clean, scalable template for real-world projects.</p>
+          <div class="project-tags">
+            <span class="ptag">MongoDB</span><span class="ptag">Express</span><span class="ptag">React</span><span class="ptag">Node.js</span>
+          </div>
+          <a href="https://github.com/Divya-Laddu/MERN-CRUD-APP" target="_blank" class="project-cta">View on GitHub ↗</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-type">Frontend</div>
+            <a href="https://github.com/Divya-Laddu/Personal_Portfolio" target="_blank" class="project-link-icon" aria-label="GitHub">↗</a>
+          </div>
+          <h3 class="project-title">Personal Portfolio</h3>
+          <p class="project-desc">This very portfolio — a responsive, animated single-page site showcasing my skills and work. Built with vanilla HTML, CSS, and JavaScript.</p>
+          <div class="project-tags">
+            <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span>
+          </div>
+          <a href="https://github.com/Divya-Laddu/Personal_Portfolio" target="_blank" class="project-cta">View on GitHub ↗</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section class="section achievements" id="achievements">
+    <div class="container">
+      <div class="section-label">04 — Achievements</div>
+      <h2 class="section-title">Milestones That Mark the Journey</h2>
+      <div class="achievements-list">
+
+        <div class="achievement-item">
+          <div class="ach-icon">🏆</div>
+          <div class="ach-content">
+            <div class="ach-meta">Startup · V-NEST, VIT Chennai · 2026</div>
+            <h3 class="ach-title">SSV Program — ₹2 Lakhs Funded</h3>
+            <p>Selected for the Student Startup Venture program. Received ₹2 Lakhs in funding for an IoT-enabled intelligent indoor cultivation system with sensor-based automated irrigation and fertilizer control.</p>
+          </div>
+          <div class="ach-badge funded">Funded</div>
+        </div>
+
+        <div class="achievement-item">
+          <div class="ach-icon">☁️</div>
+          <div class="ach-content">
+            <div class="ach-meta">Certification · Microsoft · Industrial Internship</div>
+            <h3 class="ach-title">Microsoft Azure AI Fundamentals</h3>
+            <p>Completed Microsoft Azure AI Fundamentals — foundational AI concepts, Azure AI services, and practical implementation of AI tools across industries.</p>
+          </div>
+          <div class="ach-badge certified">Certified</div>
+        </div>
+
+        <div class="achievement-item">
+          <div class="ach-icon">💡</div>
+          <div class="ach-content">
+            <div class="ach-meta">Hackathon · Smart India Hackathon · 2023</div>
+            <h3 class="ach-title">SIH Participation — 2023</h3>
+            <p>Contributed to frontend development in a collaborative team using HTML, CSS, JavaScript, and blockchain integration for a national-level innovation challenge.</p>
+          </div>
+          <div class="ach-badge participated">SIH</div>
+        </div>
+
+        <div class="achievement-item">
+          <div class="ach-icon">🎭</div>
+          <div class="ach-content">
+            <div class="ach-meta">Hackathon · Dark Pattern Buster · 2023</div>
+            <h3 class="ach-title">DPBH — Dark Pattern Buster Hackathon</h3>
+            <p>Collaborated on addressing deceptive design practices using frontend, backend, and blockchain for transparency. Both full-stack + blockchain contribution.</p>
+          </div>
+          <div class="ach-badge participated">DPBH</div>
+        </div>
+
+        <div class="achievement-item">
+          <div class="ach-icon">🎤</div>
+          <div class="ach-content">
+            <div class="ach-meta">Event · VIT Chennai</div>
+            <h3 class="ach-title">TechnoVIT — Marketing Contribution</h3>
+            <p>Contributed to marketing for TechnoVIT, VIT's annual technical fest — driving participation and boosting event visibility through strategic outreach.</p>
+          </div>
+          <div class="ach-badge participated">TechnoVIT</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FREELANCE SERVICES ===== -->
+  <section class="section freelance" id="freelance">
+    <div class="container">
+      <div class="section-label">05 — Freelance</div>
+      <h2 class="section-title">What I Can Build for You</h2>
+      <p class="section-sub">Available for freelance projects alongside my studies. Let's create something exceptional together.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
+          <h3>Custom Websites</h3>
+          <p>Responsive, modern websites using HTML, CSS, JavaScript and React. Pixel-perfect and fast.</p>
+          <ul class="service-features">
+            <li>Mobile-first responsive design</li>
+            <li>Smooth animations & interactions</li>
+            <li>SEO-ready structure</li>
+          </ul>
+        </div>
+        <div class="service-card featured-service">
+          <div class="service-badge">Most Popular</div>
+          <div class="service-icon">⚙️</div>
+          <h3>MERN Stack Apps</h3>
+          <p>Full-stack web applications with MongoDB, Express, React, and Node.js — scalable and production-ready.</p>
+          <ul class="service-features">
+            <li>RESTful API development</li>
+            <li>Authentication & authorization</li>
+            <li>Database design & integration</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3>Landing Pages</h3>
+          <p>High-converting, beautiful landing pages for startups and businesses that drive results.</p>
+          <ul class="service-features">
+            <li>Conversion-focused layout</li>
+            <li>Fast load performance</li>
+            <li>A/B testing ready</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🤖</div>
+          <h3>AI / ML Integration</h3>
+          <p>Add intelligence to your product — image recognition, NLP, automation, or custom ML models.</p>
+          <ul class="service-features">
+            <li>Computer vision features</li>
+            <li>Model integration via API</li>
+            <li>Python + TensorFlow pipelines</li>
+          </ul>
+        </div>
+      </div>
+      <div class="freelance-cta">
+        <p>Have a project in mind? Let's talk.</p>
+        <a href="#contact" class="btn btn-primary">Start a Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label">06 — Contact</div>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <h2 class="section-title">Let's Build Something <em>Great</em></h2>
+          <p>Whether it's a freelance project, a job opportunity, or just a conversation about tech — I'd love to hear from you.</p>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/divya-kumari-575b73274/" target="_blank" class="contact-link">
+              <span class="contact-link-icon">💼</span>
+              <span>LinkedIn</span>
+              <span class="arrow">↗</span>
+            </a>
+            <a href="https://github.com/Divya-Laddu" target="_blank" class="contact-link">
+              <span class="contact-link-icon">💻</span>
+              <span>GitHub</span>
+              <span class="arrow">↗</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1VH5YtLfCyxjn1eNtjM2DDw852pAHZebR/view?usp=sharing" target="_blank" class="contact-link">
+              <span class="contact-link-icon">📄</span>
+              <span>Download Résumé</span>
+              <span class="arrow">↗</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Freelance project / Job / Just saying hi" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width" id="submit-btn">
+              Send Message ✉️
+            </button>
+            <div class="form-note">No spam. I read every message personally.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">DK<span class="accent">.</span></span>
+        <p>© 2026 Divya Kumari. Crafted with care &amp; curiosity.</p>
+        <a href="#hero" class="back-top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
