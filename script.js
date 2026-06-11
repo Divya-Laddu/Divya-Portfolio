@@ -76,7 +76,7 @@ const phrases = [
   'Full Stack Developer',
   'Deep Learning Enthusiast',
   'MERN Stack Builder',
-  'IoT Startup Founder',
+  'SSV Awardee · ₹2L Funded @ V-NEST',
   'Open to Freelance Work',
 ];
 let phraseIdx = 0, charIdx = 0, deleting = false;
